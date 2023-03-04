@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/image/site/teste5.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./vendor/Booststrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/icons/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="./vendor/sweetalert2/dist/sweetalert2.css">
+
+
+    <link rel="stylesheet" href="./assets/css/style.add.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contain">
+        <aside id="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <img src="./assets/image/site/teste5.png" alt="">
+                    <h2>RES<span class="danger">TORY</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="fi-rr-cross"></span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="list active">
+                    <span class="  fi-rr-apps"></span>
+                    <h3>Pagina Inicial</h3>
+                </a>
+                <a href="#" class="list">
+                    <span class=" fi-rr-boxes"></span>
+                    <h3>Meu Stock</h3>
+                </a>
+                <a href="#" class="list">
+                    <span class=" fi-rr-shopping-cart"></span>
+                    <h3>Vendas</h3>
+                </a>
+                <a href="#" class="list">
+                    <span class="  fi-rr-chat-arrow-grow"></span>
+                    <h3>Relatorios</h3>
+                </a>
+                <a href="#" class="list">
+                    <span class="  fi-rr-comment-alt"></span>
+                    <h3>Messages</h3>
+                    <span class="message-count">25</span>
+                </a>
+                <a href="#" class="list">
+                    <span class=" fi-rr-user"></span>
+                    <h3>Usuarios</h3>
+                </a>
+                <a href="#" class="list">
+                    <span class="  fi-rr-comment-info"></span>
+                    <h3>Notificações</h3>
+                </a>
+                <a href="#" class="list">
+                    <span class=" fi-rr-settings"></span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class=" fi-rr-plus-small"></span>
+                    <h3>Add Product</h3>
+                </a>
+
+                <a href="#">
+                    <span class=" fi-rr-exit"></span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+
+        <main id="main">
+            <h1 class="heading">Pagina Inicial</h1>
+            <!-- <div class="date">
+                <input type="date" name="" id="">
+            </div> -->
+            
+            <div class="insights">
+                
+                
+                <div class="sales"  style="--dash: 320px;--clr: #129ff1;--num: 95;">
+                    <div class="texto">
+                        <span class="fi-rr-chart-line-up"></span>
+                        <h2>Relatorios</h2>
+                    </div>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Valor Total:</h3>
+                            <h1>000.000.000,00<i>kz</i></h1>
+                        </div>
+                        <div class="progress1">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="50" cy="50" r="50" ></circle>
+                                <circle cx="50" cy="50" r="50" ></circle>
+                            </svg>
+                            <div class="number">
+                                <p>95%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+
+                </div>
+
+                <div class="expenses"  style="--dash: 320px;--clr: #fc3e04;--num: 84;">
+                    <div class="texto">
+                        <span class=" fi-rr-boxes"></span>
+                        <h2>Stock</h2>
+                    </div>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Valor Total:</h3>
+                            <h1>000.000.000,00<i>kz</i></h1>
+                        </div>
+                        <div class="progress1">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="50" cy="50" r="50" ></circle>
+                                <circle cx="50" cy="50" r="50" ></circle>
+                            </svg>
+                            <div class="number">
+                                <p>84%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+
+                </div>
+
+                <div class="income"  style="--dash: 320px;--clr: #fc3e04;--num: 84;">
+                    <div class="texto">
+                        <span class=" fi-rr-shopping-cart"></span>
+                        <h2>Abertura</h2>
+                    </div>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Estado:</h3>
+                            <h3>Codigo:</h3>
+                        </div>
+                        <div class="laptop">
+                            <h1 style="color: red;">Feichado</h1>
+                        </div>
+                        <div class="left" style="color: red;">
+                            <h1>Indespo...</h1>
+                            <h1>Fora de Serviço</h1>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-primary">Abrir Caixa</a>
+                    <!-- <small class="text-muted">Last 24 Hours</small> -->
+
+                </div>
+
+
+
+            </div>
+
+            <div class="recent-orders">
+                <h2 class="title">Recente Order</h2>
+                <table >
+                    <thead>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Payment</th>
+                        <th>Status</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>12345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>12345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>12345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>12345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>12345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>12345</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td><a class="primary" href="">Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <a href="#right" class="move btn-move-main active">
+                <span class=" fi-rr-arrow-small-right"></span>
+            </a>
+        </main>
+
+
+        <div id="right" class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="fi-rr-menu-burger"></span>
+                </button>
+                <!-- <div class="theme-toggler">
+                    <span class="fi-rr-brightness active"></span>
+                    <span class="fi-rr-moon"></span>
+                </div> -->
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Mateus</b></p>
+                        <small class="text-muted" >Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/image/site/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <h2 class="title">Recente Updates</h2>
+                <div class="updates">
+                    
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/image/site/profile-2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Walter Santana</b> Que tal participarmos em um concurso de programação.</p>
+                            <small class="text-muted">2 Minutes Feb</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/image/site/profile-3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Tania Rodrigues</b> Vamos Trabalar Juntos no GitHub nesse Domingo.</p>
+                            <small class="text-muted">8 Minutes Feb</small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/image/site/profile-4.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Elena Montero</b> Quero cria um progect contigo com python.</p>
+                            <small class="text-muted">4 Hours Feb</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sales-analytics">
+                <h2 class="title">Sales Analytics</h2>
+                
+                <div class="item online">
+                    <div class="icon">
+                        <span class="  fi-rr-cube"></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3 class="tna">3849</h3>
+                    </div>
+                </div>
+
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="  fi-rr-donate"></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success"></h5>
+                        <h3 class="tna">3849</h3>
+                    </div>
+                </div>
+
+                <div class="item online">
+                    <div class="icon">
+                        <span class=" fi-rr-shopping-cart"></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3 class="tna">3849</h3>
+                    </div>
+                </div>
+
+
+                <a href="#open-modal" id="btn-open-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="item add-product">
+                    <div>
+                        <span class="fi-rr-plus"></span>
+                        <h3>Add Product</h3>
+                    </div>
+                </a>
+
+            </div>
+            <a href="#main" class="move btn-move-right ">
+                <span class=" fi-rr-arrow-small-left"></span>
+            </a>
+        </div>
+
+
+
+
+    </div>
+    
+
+
+
+    <!-- start display none -->
+        <form onsubmit="teste()" action="">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <div class="topButtons">
+                                <div class="titulo">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastramento de Productos</h1>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container form-add">
+            
+                                <div class="upload-file">
+                                    <div class="drop-zone">
+                                        <span class="drop-zone__prompt">
+                                            <i class='image fi-rr-cloud-upload-alt' ></i>
+                                            <span>Escolher Capa</span>
+                                        </span>
+                                        <input type="file" name="input_add_file" class="drop-zone__input">
+                                    </div>
+                                </div>
+            
+                                <div class="textboxs">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control input_add_cod" id="floatingInputInvalid" placeholder="example" value="" required>
+                                        <label for="floatingInputInvalid">Codigo do Producto</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control input_add_nome" id="floatingInputInvalid" placeholder="example" value="" required>
+                                        <label for="floatingInputInvalid">Nome do Producto</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control input_add_preco" id="floatingInputInvalid" placeholder="00000" value="" required>
+                                        <label for="floatingInputInvalid">Preço do Producto</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control input_add_qtd" id="floatingInputInvalid" placeholder="Quantidades de Pratos" value="" required>
+                                        <label for="floatingInputInvalid">Quantidade do Producto</label>
+                                    </div>
+                                    <div class="form-floating">
+                                    <select class="form-select input_add_cat" id="floatingSelectGrid" required>
+                                        <option value="Prato">Prato</option>
+                                        <option value="Bebida">Bebida</option>
+                                        <option value="Prexo">Produto</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">Selecionar Categoria</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <textarea class="form-control input_add_desc" placeholder="example.... " id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Descricao</label>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn-success">Cadastrar Producto</button>
+                            <button type="reset" class="btn btn-secondary">Limpar Tudo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    <!-- end display none -->
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./vendor/Booststrap/bootstrap.min.js"></script>
+    <script src="./vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        function teste(){
+            var cod = $('.input_add_nome').val();
+            var nome = $('.input_add_nome').val();
+            var preco = $('.input_add_preco').val();
+            var qtd = $('.input_add_qtd').val();
+            var cat = $('.input_add_cat').val();
+            var desc = $('.input_add_desc').val();
+            var file = $('.input_add_file').val();
+            swal(
+                'Producto `'+nome+'`',
+                'Cadastrado com susseço',
+                'success'
+            )
+        }
+    </script>
+</body>
+</html>

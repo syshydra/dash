@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vendor/Booststrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/icons/css/uicons-regular-rounded.css">
+    <script src="./vendor/Booststrap/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary active" aria-current="page">ABERTURA</a>
+        <a href="#open-modal" id="btn-open-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">
+            <i class="bx bx-plus-circle"></i>
+        </a>
+        <a href="#" class="btn btn-primary">
+            <i class="bx bx-cart"></i>
+        </a>
+    </div>
+
+
+
+    <form action="../classes/addPrato.php" method="post" enctype="multipart/form-data">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="topButtons">
+                            <div class="titulo">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Sistema de Cadastramentos</h1>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="container form-add">
+    
+                        <div class="upload-file">
+                            <div class="drop-zone">
+                                <span class="drop-zone__prompt">
+                                    <i class='bx bxs-cloud-upload' style="font-size: 70pt"></i><br><br>
+                                    Adicionar foto do produto
+                                </span>
+                                <input type="file" name="file" class="drop-zone__input">
+                            </div>
+                        </div>
+    
+                        <div class="textboxs">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputInvalid" name="nome" placeholder="example" value="">
+                                <label for="floatingInputInvalid">Nome do Prato</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="number" name="preco" class="form-control" id="floatingInputInvalid" placeholder="00000" value="">
+                                <label for="floatingInputInvalid">Preco do Prato</label>
+                            </div>
+                            <div class="form-floating">
+                              <select  name="categoria" class="form-select" id="floatingSelectGrid">
+                                <option value="Prato">Prato</option>
+                                <option value="Bebida">Bebida</option>
+                                <option value="Prexo">Produto</option>
+                              </select>
+                              <label for="floatingSelectGrid">Selecionar Categoria</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="number" name="quantidade" class="form-control" id="floatingInputInvalid" placeholder="Quantidades de Pratos" value="">
+                                <label for="floatingInputInvalid">Quantidades de Pratos</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" name="cozinheiro" class="form-control" id="floatingInputInvalid" placeholder="example" value="">
+                                <label for="floatingInputInvalid">Cozinheiro</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea name="igredientes" class="form-control" placeholder="example" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Igredientes</label>
+                            </div>
+                            <div class="form-floating">
+                                <textarea  name="descricao" class="form-control" placeholder="example.... " id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Descricao</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary">Limpar Tudo</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+
+</body>
+</html>
